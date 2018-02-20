@@ -1,0 +1,35 @@
+
+<div>You on the football team page nigga!
+
+	<div class="alert alert-dark w-50 mx-auto text-center" role="alert">
+	  Here is the list of all the <strong>Teams!</strong> Select to view the details.
+	</div>
+
+	<div class = "container-fluid">
+		<div class="row justify-content-around no-gutters">
+			<div ng-repeat="x in footballJson.data.teams" class="card border-dark rounded col-offset-1 col-3 m-1 mb-3">
+			  <div class="card-header bg-dark text-white">
+			    {{ x.name }}
+			  </div>
+			  <div class="card-body bg-faded">
+			    <blockquote class="card-blockquote">
+	<!-- 		      <h6 class = "m-0 text-center"> Year: {{ x.year }}</h6>
+			      <h6 class = "m-0 text-center"> League: {{ x.league }}</h6>
+			      <h6 class = "m-0 text-center pb-2"> Number of Teams: {{ x.numberOfTeams }}</h6> -->
+
+			      <ul class="list-group list-group-flush">
+				    <li class="list-group-item list-group-item-action p-0">Players
+				    	<!-- <a ng-click = "setFootballApi(x._links.teams.href, {})" ng-href="#!/football/teams">Teams</a> -->
+				    </li>
+				    <li class="list-group-item list-group-item-action p-0">Fixtures</li>
+	<!-- 			    <li class="list-group-item list-group-item-action p-0">League-Table</li> -->
+				  </ul>
+					<!--       <footer>Someone famous in
+			        <cite title="Source Title">Source Title</cite>
+			      </footer> -->
+			    </blockquote>
+			  </div>
+			</div>
+		</div>
+	</div> 
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+	<title>SportCheck-One stop sport updates!</title>
+	<meta charset="utf-8">
+
+	<!-- temp js for reload -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+	<!-- Styled by - Bootstrap  -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+	<!-- Powered by - Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.7/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.7/angular-resource.min.js"></script>
+
+    <!-- JS files - magic begins here -->
+    <script src="app.js"></script>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+  <!-- Brand -->
+  <a class="navbar-brand ml-5" href="#!">SportCheck</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#menuItems">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse ml-5" id="menuItems">
+    <ul class="navbar-nav">
+      <li class="nav-item mr-3">
+        <a class="nav-link" href="#!/football">Football</a>
+      </li>
+      <li class="nav-item mr-3">
+        <a class="nav-link" href="#!/cricket">Cricket</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!/hockey">Hockey</a>
+      </li>
+    </ul>
+  </div>
+</nav> 
+
+<div ng-view> </div>
+
+<!-- Bootstrap imports -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
