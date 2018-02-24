@@ -19,8 +19,10 @@
 			    <li class="list-group-item list-group-item-action p-0">
 			    	<a ng-click = "setFootballApi(x._links.teams.href, {})" ng-href="#!/football/teams">Teams</a>
 			    </li>
-			    <li class="list-group-item list-group-item-action p-0">Fixtures</li>
-			    <li class="list-group-item list-group-item-action p-0">League-Table</li>
+			    <li class="list-group-item list-group-item-action p-0">
+			    	<a ng-click = "setFootballApi(x._links.fixtures.href, {})" ng-href="#!/football/fixtures">Fixtures</a></li>
+			    <li class="list-group-item list-group-item-action p-0">
+			    	<a ng-click = "setFootballApi(x._links.leagueTable.href, {})" ng-href="#!/football/leagueTable">League-Table</a></li>
 			  </ul>
 				<!--       <footer>Someone famous in
 		        <cite title="Source Title">Source Title</cite>

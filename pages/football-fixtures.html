@@ -1,0 +1,29 @@
+	<div class="d-flex flex-row flex-wrap justify-content-around">
+		<div class="rounded border border-dark p-1 m-2 align-self-center" ng-repeat= "x in footballJson.data.fixtures">
+			<div class="d-flex flex-row justify-content-center no-gutters" ng-click= "accordion.current = $index">
+					<div class="pt-1">
+						<h5 class=" bg-dark text-white rounded p-2 text-center" >{{ x.awayTeamName }}</h5>
+
+						<h3 class="text-danger text-center font-weight-bold p-2 m-0">VS</h3>
+
+						<h5 class="bg-dark text-white rounded p-2 text-center">{{ x.homeTeamName }}</h5>
+					</div>
+			</div>
+			<div ng-show="accordion.current == $index">
+				<div class="row justify-content-around no-gutters">
+						<div class="p-1 col-3 col-offset-1">
+							<h2 class="text-center rounded" ng-class = "x.result.goalsAwayTeam > x.result.goalsHomeTeam ? 'text-success border' : 'text-danger' " >{{ x.result.goalsAwayTeam }}</h2>
+						</div>
+
+						<div class="p-1 col-3 col-offset-1">
+							<h2 class="text-center rounded" ng-class = "x.result.goalsAwayTeam < x.result.goalsHomeTeam ? 'text-success border' : 'text-danger' ">{{ x.result.goalsHomeTeam }}</h2>
+						</div>
+				</div>
+
+				<div class="row justify-content-around no-gutters">
+					<div class="col-12 text-center">Date: {{ x.date }}</div>
+					<div class="col-12 text-center">Status: {{ x.status }}</div>
+				</div>
+			</div>
+		</div>
+	</div>
